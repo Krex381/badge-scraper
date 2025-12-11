@@ -2,6 +2,10 @@ import { Client } from 'discord.js-selfbot-v13';
 import fetch from 'node-fetch';
 import readline from 'readline';
 
+// ═══════════════════════════════════════════════════════════
+// CONSTANTS
+// ═══════════════════════════════════════════════════════════
+
 const COLORS = {
     reset: '\x1b[0m', bright: '\x1b[1m', dim: '\x1b[2m',
     cyan: '\x1b[36m', magenta: '\x1b[35m', yellow: '\x1b[33m',
@@ -14,7 +18,6 @@ const EMOJIS = {
     hypesquad_events: '<:hypesquad_events:1387742522545279056>',
     bughunter: '<:bughunter:1387742487690612887>',
     bughuntergold: '<:bughuntergold:1387742489338970123>',
-    oldusername: '<:oldusername:1387742549225115680>',
     bravery: '<:bravery:1387742465544687707>',
     brilliance: '<:brilliance:1387742466697990285>',
     balance: '<:balance:1387742461014573058>',
@@ -22,32 +25,12 @@ const EMOJIS = {
     early_verified_bot_developer: '<:early_verified_bot_developer:1387742498226573342>',
     moderatorprogramsalumni: '<:moderatorprogramsalumni:1387742524105429032>',
     active_developer: '<:active_developer:1387742440697368606>',
-    boost1month: '<:boost1month:1387742464202379324>',
-    '2monthsboostnitro': '<:2monthsboostnitro:1387742437723602975>',
-    nitro_boost_3_months: '<:nitro_boost_3_months:1387742527339102338>',
-    '6months_boost': '<:6months_boost:1387742439477088287>',
-    nitro_boost_9_months: '<:nitro_boost_9_months:1387742529289457674>',
-    '12monthsboostnitro': '<:12monthsboostnitro:1387742435769061417>',
-    boost15month: '<:boost15month:1387742462629511270>',
-    nitro_boost_18_months: '<:nitro_boost_18_months:1387742525699260538>',
-    '24_months': '<:24_months:1387742436742139974>',
-    bronze: '<:bronze:1387742468727898182>',
-    silver: '<:silver:1387742580300582974>',
-    gold: '<:gold:1387742520733204480>',
-    platinum: '<:platinum:1387742556649164922>',
-    diamond: '<:diamond:1387742491629060156>',
-    emerald: '<:emerald:1387742518153707570>',
-    ruby: '<:ruby:1387742559970922496>',
-    opal: '<:opal:1387742550919614496>',
     crown2: '<a:crown2:1413222572090331337>',
     idcard: '<:idcard:1413222293869432882>',
     world: '<:world:1413221837676220446>',
-    pin: '<a:pin:1413224189074079744>',
     lockk: '<:lockk:1413229832829014056>',
     badgespremium: '<:badgespremium:1413230008872210454>',
-    cards: '<:cards:1413230537958625330>',
-    key: '<:key:1413214568448266320>',
-    url: '<:url:1413220079373389854>'
+    cards: '<:cards:1413230537958625330>'
 };
 
 const BADGE_CONFIG = {
@@ -177,5 +160,4 @@ const createEmbed = (user, rank) => {
         });
         client.destroy();
     }
-
 })();
