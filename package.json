@@ -1,0 +1,22 @@
+{
+  "name": "discord-badge-scraper",
+  "version": "2.0.0",
+  "description": "Discord self-bot to scrape and find users with rare badges",
+  "main": "scraper.js",
+  "type": "module",
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "keywords": [
+    "discord",
+    "badge",
+    "scraper"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "debug": "^4.4.3",
+    "discord.js-selfbot-v13": "^3.4.2",
+    "node-fetch": "^3.3.2"
+  }
+}
