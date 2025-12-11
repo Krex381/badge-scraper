@@ -2,10 +2,6 @@ import { Client } from 'discord.js-selfbot-v13';
 import fetch from 'node-fetch';
 import readline from 'readline';
 
-// ═══════════════════════════════════════════════════════════
-// CONSTANTS
-// ═══════════════════════════════════════════════════════════
-
 const COLORS = {
     reset: '\x1b[0m', bright: '\x1b[1m', dim: '\x1b[2m',
     cyan: '\x1b[36m', magenta: '\x1b[35m', yellow: '\x1b[33m',
@@ -181,4 +177,5 @@ const createEmbed = (user, rank) => {
         });
         client.destroy();
     }
+
 })();
